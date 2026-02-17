@@ -1,25 +1,25 @@
 {
-  "title": "Browse Fresh Produce",
-  "searchPlaceholder": "Search for products...",
-  "productsFound": "products found",
-  "clearFiltersButton": "Clear Filters",
   "allCategories": "All Categories",
   "allLocations": "All Locations",
-  "sortBy": "Sort By",
+  "clearFiltersButton": "Clear Filters",
+  "empty": {
+    "subtitle": "Try adjusting your filters or search terms",
+    "title": "No products found"
+  },
   "filters": {
-    "title": "Filters",
     "category": "Category",
+    "inStock": "In Stock Only",
     "location": "Location",
     "price": "Price Range",
-    "inStock": "In Stock Only"
+    "title": "Filters"
   },
+  "productsFound": "products found",
+  "searchPlaceholder": "Search for products...",
   "sort": {
     "latest": "Latest",
-    "priceLow": "Price: Low to High",
-    "priceHigh": "Price: High to Low"
+    "priceHigh": "Price: High to Low",
+    "priceLow": "Price: Low to High"
   },
-  "empty": {
-    "title": "No products found",
-    "subtitle": "Try adjusting your filters or search terms"
-  }
+  "sortBy": "Sort By",
+  "title": "Browse Fresh Produce"
 }

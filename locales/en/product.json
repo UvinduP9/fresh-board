@@ -1,10 +1,10 @@
 {
+  "contactVendor": "Contact Vendor",
+  "inStock": "In Stock",
+  "location": "Location",
+  "outOfStock": "Out of Stock",
   "price": "Price",
   "unit": "Unit",
   "updated": "Last updated",
-  "vendor": "Vendor",
-  "location": "Location",
-  "inStock": "In Stock",
-  "outOfStock": "Out of Stock",
-  "contactVendor": "Contact Vendor"
+  "vendor": "Vendor"
 }

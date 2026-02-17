@@ -1,25 +1,25 @@
 {
-  "title": "Bla gjennom ferske produkter",
-  "searchPlaceholder": "Søk etter produkter...",
-  "productsFound": "produkter funnet",
-  "clearFiltersButton": "Fjern filtre",
   "allCategories": "Alle kategorier",
   "allLocations": "Alle plasseringer",
-  "sortBy": "Sorter etter",
+  "clearFiltersButton": "Fjern filtre",
+  "empty": {
+    "subtitle": "Prøv å justere filtrene eller søkeordene dine",
+    "title": "Ingen produkter funnet"
+  },
   "filters": {
-    "title": "Filtre",
     "category": "Kategori",
+    "inStock": "Kun på lager",
     "location": "Plassering",
     "price": "Prisområde",
-    "inStock": "Kun på lager"
+    "title": "Filtre"
   },
+  "productsFound": "produkter funnet",
+  "searchPlaceholder": "Søk etter produkter...",
   "sort": {
     "latest": "Nyeste",
-    "priceLow": "Pris: Lav til høy",
-    "priceHigh": "Pris: Høy til lav"
+    "priceHigh": "Pris: Høy til lav",
+    "priceLow": "Pris: Lav til høy"
   },
-  "empty": {
-    "title": "Ingen produkter funnet",
-    "subtitle": "Prøv å justere filtrene eller søkeordene dine"
-  }
+  "sortBy": "Sorter etter",
+  "title": "Bla gjennom ferske produkter"
 }

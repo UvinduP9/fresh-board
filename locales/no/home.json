@@ -1,24 +1,24 @@
 {
+  "features": {
+    "contact": {
+      "description": "Direkte kontakt med leverandører via WhatsApp",
+      "title": "Enkel kontakt"
+    },
+    "fresh": {
+      "description": "Alle produkter kommer fra lokale norske gårder",
+      "title": "Fersk & Lokal"
+    },
+    "pricing": {
+      "description": "Oppdatert daglig for åpenhet og rettferdighet",
+      "title": "Rettferdige priser"
+    }
+  },
   "hero": {
-    "title": "Velkommen til FreshBoard",
+    "browseButton": "Bla gjennom alle produkter",
     "subtitle": "Bla gjennom dagens ferske produkter og priser fra lokale leverandører over hele Norge",
-    "browseButton": "Bla gjennom alle produkter"
+    "title": "Velkommen til FreshBoard"
   },
   "highlights": {
     "title": "Dagens høydepunkter"
-  },
-  "features": {
-    "fresh": {
-      "title": "Fersk & Lokal",
-      "description": "Alle produkter kommer fra lokale norske gårder"
-    },
-    "pricing": {
-      "title": "Rettferdige priser",
-      "description": "Oppdatert daglig for åpenhet og rettferdighet"
-    },
-    "contact": {
-      "title": "Enkel kontakt",
-      "description": "Direkte kontakt med leverandører via WhatsApp"
-    }
   }
 }

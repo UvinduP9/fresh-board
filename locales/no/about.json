@@ -1,49 +1,49 @@
 {
-  "title": "Om FreshBoard",
-  "mission": {
-    "title": "Vårt oppdrag",
-    "description": "FreshBoard kobler kunder med lokale bønder og leverandører over hele Norge, og gjør det enkelt å finne ferske, lokalt produserte varer til rettferdige priser. Vi tror på åpenhet, støtte til lokale bedrifter og å bringe de ferskeste produktene til ditt bord."
+  "community": {
+    "description": "Enten du er en kunde som leter etter ferske varer eller en leverandør som ønsker å nå flere kunder, er FreshBoard her for å hjelpe. Sammen bygger vi et mer bærekraftig og tilkoblet matsystem i Norge.",
+    "title": "Bli med i vårt fellesskap"
   },
   "howItWorks": {
-    "title": "Slik fungerer det",
     "step1": {
-      "title": "Bla gjennom produkter",
-      "description": "Utforsk vårt katalog med ferske varer fra lokale leverandører. Filtrer etter kategori, sted og pris for å finne nøyaktig det du trenger."
+      "description": "Utforsk vårt katalog med ferske varer fra lokale leverandører. Filtrer etter kategori, sted og pris for å finne nøyaktig det du trenger.",
+      "title": "Bla gjennom produkter"
     },
     "step2": {
-      "title": "Sjekk priser og tilgjengelighet",
-      "description": "Alle priser oppdateres daglig av våre leverandører, slik at du alltid ser den mest aktuelle informasjonen og tilgjengeligheten."
+      "description": "Alle priser oppdateres daglig av våre leverandører, slik at du alltid ser den mest aktuelle informasjonen og tilgjengeligheten.",
+      "title": "Sjekk priser og tilgjengelighet"
     },
     "step3": {
-      "title": "Kontakt leverandører direkte",
-      "description": "Fant noe du liker? Kontakt leverandøren direkte via WhatsApp for å bestille eller stille spørsmål."
-    }
+      "description": "Fant noe du liker? Kontakt leverandøren direkte via WhatsApp for å bestille eller stille spørsmål.",
+      "title": "Kontakt leverandører direkte"
+    },
+    "title": "Slik fungerer det"
   },
+  "mission": {
+    "description": "FreshBoard kobler kunder med lokale bønder og leverandører over hele Norge, og gjør det enkelt å finne ferske, lokalt produserte varer til rettferdige priser. Vi tror på åpenhet, støtte til lokale bedrifter og å bringe de ferskeste produktene til ditt bord.",
+    "title": "Vårt oppdrag"
+  },
+  "title": "Om FreshBoard",
   "whyChoose": {
-    "title": "Hvorfor velge FreshBoard?",
-    "freshLocal": {
-      "title": "Ferskt og lokalt:",
-      "description": "Alle produkter kommer direkte fra norske gårder og lokale leverandører"
-    },
-    "transparentPricing": {
-      "title": "Gjennomsiktige priser:",
-      "description": "Se nøyaktig hva du betaler med daglig oppdaterte priser"
-    },
-    "supportLocal": {
-      "title": "Støtt lokalt:",
-      "description": "Hvert kjøp støtter lokale bønder og små bedrifter"
-    },
     "easyCommunication": {
-      "title": "Enkel kommunikasjon:",
-      "description": "Direkte kontakt med leverandører for personlig service"
+      "description": "Direkte kontakt med leverandører for personlig service",
+      "title": "Enkel kommunikasjon:"
+    },
+    "freshLocal": {
+      "description": "Alle produkter kommer direkte fra norske gårder og lokale leverandører",
+      "title": "Ferskt og lokalt:"
     },
     "noMiddleman": {
-      "title": "Ingen mellommann:",
-      "description": "Koble direkte med produsenter for de beste prisene"
+      "description": "Koble direkte med produsenter for de beste prisene",
+      "title": "Ingen mellommann:"
+    },
+    "supportLocal": {
+      "description": "Hvert kjøp støtter lokale bønder og små bedrifter",
+      "title": "Støtt lokalt:"
+    },
+    "title": "Hvorfor velge FreshBoard?",
+    "transparentPricing": {
+      "description": "Se nøyaktig hva du betaler med daglig oppdaterte priser",
+      "title": "Gjennomsiktige priser:"
     }
-  },
-  "community": {
-    "title": "Bli med i vårt fellesskap",
-    "description": "Enten du er en kunde som leter etter ferske varer eller en leverandør som ønsker å nå flere kunder, er FreshBoard her for å hjelpe. Sammen bygger vi et mer bærekraftig og tilkoblet matsystem i Norge."
   }
 }

@@ -1,7 +1,7 @@
 {
-  "loading": "Loading...",
-  "error": "Something went wrong",
-  "retry": "Retry",
   "clearFilters": "Clear Filters",
-  "lastUpdated": "Last updated"
+  "error": "Something went wrong",
+  "lastUpdated": "Last updated",
+  "loading": "Loading...",
+  "retry": "Retry"
 }

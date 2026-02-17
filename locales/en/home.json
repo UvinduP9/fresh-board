@@ -1,24 +1,24 @@
 {
+  "features": {
+    "contact": {
+      "description": "Direct contact with vendors via WhatsApp",
+      "title": "Easy Contact"
+    },
+    "fresh": {
+      "description": "All products sourced from local Norwegian farms",
+      "title": "Fresh & Local"
+    },
+    "pricing": {
+      "description": "Updated daily for transparency and fairness",
+      "title": "Fair Prices"
+    }
+  },
   "hero": {
-    "title": "Welcome to FreshBoard",
+    "browseButton": "Browse All Products",
     "subtitle": "Browse today's fresh produce and prices from local vendors across Norway",
-    "browseButton": "Browse All Products"
+    "title": "Welcome to FreshBoard Website"
   },
   "highlights": {
     "title": "Today's Highlights"
-  },
-  "features": {
-    "fresh": {
-      "title": "Fresh & Local",
-      "description": "All products sourced from local Norwegian farms"
-    },
-    "pricing": {
-      "title": "Fair Prices",
-      "description": "Updated daily for transparency and fairness"
-    },
-    "contact": {
-      "title": "Easy Contact",
-      "description": "Direct contact with vendors via WhatsApp"
-    }
   }
 }

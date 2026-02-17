@@ -1,0 +1,522 @@
+{
+  "version": 1,
+  "dataset": "production",
+  "lastPulled": "2026-02-17T08:13:09.476Z",
+  "entries": {
+    "about.community.description": {
+      "_id": "about-community.description",
+      "_rev": "6sxUO8wEGOXoiYpipN3HwF",
+      "hash": "1de5fb434dcbd2a8"
+    },
+    "about.community.title": {
+      "_id": "about-community.title",
+      "_rev": "6sxUO8wEGOXoiYpipN3HwF",
+      "hash": "a050203db3d68f1e"
+    },
+    "about.howItWorks.step1.description": {
+      "_id": "about-howItWorks.step1.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "e52f17afc65d4f4c"
+    },
+    "about.howItWorks.step1.title": {
+      "_id": "about-howItWorks.step1.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "4895cb65c543630f"
+    },
+    "about.howItWorks.step2.description": {
+      "_id": "about-howItWorks.step2.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "0e809baf58889057"
+    },
+    "about.howItWorks.step2.title": {
+      "_id": "about-howItWorks.step2.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "46d309c6ae3063ed"
+    },
+    "about.howItWorks.step3.description": {
+      "_id": "about-howItWorks.step3.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "c1152a81ae72192a"
+    },
+    "about.howItWorks.step3.title": {
+      "_id": "about-howItWorks.step3.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "6348258614e0dd79"
+    },
+    "about.howItWorks.title": {
+      "_id": "about-howItWorks.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "17dceea6c711f4fe"
+    },
+    "about.mission.description": {
+      "_id": "about-mission.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "1a91d7ed8b3a2c9a"
+    },
+    "about.mission.title": {
+      "_id": "about-mission.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "b6df013a572e2695"
+    },
+    "about.title": {
+      "_id": "about-title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "290918b25d3f54f5"
+    },
+    "about.whyChoose.easyCommunication.description": {
+      "_id": "about-whyChoose.easyCommunication.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "ab3e8be15d4dcc56"
+    },
+    "about.whyChoose.easyCommunication.title": {
+      "_id": "about-whyChoose.easyCommunication.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "aec7f58960ea8293"
+    },
+    "about.whyChoose.freshLocal.description": {
+      "_id": "about-whyChoose.freshLocal.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "8f279b24131e3de9"
+    },
+    "about.whyChoose.freshLocal.title": {
+      "_id": "about-whyChoose.freshLocal.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "df116b82bca376e0"
+    },
+    "about.whyChoose.noMiddleman.description": {
+      "_id": "about-whyChoose.noMiddleman.description",
+      "_rev": "6sxUO8wEGOXoiYpipN3HwF",
+      "hash": "61995ab6c9401e70"
+    },
+    "about.whyChoose.noMiddleman.title": {
+      "_id": "about-whyChoose.noMiddleman.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "8167c71125d9453f"
+    },
+    "about.whyChoose.supportLocal.description": {
+      "_id": "about-whyChoose.supportLocal.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "cc58fa1128020b52"
+    },
+    "about.whyChoose.supportLocal.title": {
+      "_id": "about-whyChoose.supportLocal.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "7a1ec659ff0a2fbb"
+    },
+    "about.whyChoose.title": {
+      "_id": "about-whyChoose.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "4add144599e22fbe"
+    },
+    "about.whyChoose.transparentPricing.description": {
+      "_id": "about-whyChoose.transparentPricing.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "5473abae01860217"
+    },
+    "about.whyChoose.transparentPricing.title": {
+      "_id": "about-whyChoose.transparentPricing.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "95ecf3af0123cf1a"
+    },
+    "browse.allCategories": {
+      "_id": "browse-allCategories",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "61cebe48b12b35b6"
+    },
+    "browse.allLocations": {
+      "_id": "browse-allLocations",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "bd78dbb5a556346c"
+    },
+    "browse.clearFiltersButton": {
+      "_id": "browse-clearFiltersButton",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "26f88a6d73da0e22"
+    },
+    "browse.empty.subtitle": {
+      "_id": "browse-empty.subtitle",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "8b482c2506c032c6"
+    },
+    "browse.empty.title": {
+      "_id": "browse-empty.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "3129c16b1dd1b558"
+    },
+    "browse.filters.category": {
+      "_id": "browse-filters.category",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "5fde31acd823d537"
+    },
+    "browse.filters.inStock": {
+      "_id": "browse-filters.inStock",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "6a7bcfc63ad7c612"
+    },
+    "browse.filters.location": {
+      "_id": "browse-filters.location",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "163791bd6954cd39"
+    },
+    "browse.filters.price": {
+      "_id": "browse-filters.price",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "6c83df698fe67a2f"
+    },
+    "browse.filters.title": {
+      "_id": "browse-filters.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "2c5bce4bc64cd52d"
+    },
+    "browse.productsFound": {
+      "_id": "browse-productsFound",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "179bfa407111c439"
+    },
+    "browse.searchPlaceholder": {
+      "_id": "browse-searchPlaceholder",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "ae8db1c52a59ebe9"
+    },
+    "browse.sort.latest": {
+      "_id": "browse-sort.latest",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "5bb2be1213fd77ab"
+    },
+    "browse.sort.priceHigh": {
+      "_id": "browse-sort.priceHigh",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "d3f95a6e84d072b4"
+    },
+    "browse.sort.priceLow": {
+      "_id": "browse-sort.priceLow",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "2d6960e4ba394661"
+    },
+    "browse.sortBy": {
+      "_id": "browse-sortBy",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "aa3f13c4163ff539"
+    },
+    "browse.title": {
+      "_id": "browse-title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "192305c3aa53212d"
+    },
+    "common.clearFilters": {
+      "_id": "common-clearFilters",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "6666220781f8a97b"
+    },
+    "common.error": {
+      "_id": "common-error",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "211d0728afb432ec"
+    },
+    "common.lastUpdated": {
+      "_id": "common-lastUpdated",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "cc16b699a13a7a2f"
+    },
+    "common.loading": {
+      "_id": "common-loading",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "3057f46b16dfc21a"
+    },
+    "common.retry": {
+      "_id": "common-retry",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "690192dde6c76f6a"
+    },
+    "content.categories.dairy": {
+      "_id": "content-categories.dairy",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "93d751057619b8ab"
+    },
+    "content.categories.fruits": {
+      "_id": "content-categories.fruits",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "35921a9209e3c21e"
+    },
+    "content.categories.herbs": {
+      "_id": "content-categories.herbs",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "6700a68ed482f859"
+    },
+    "content.categories.vegetables": {
+      "_id": "content-categories.vegetables",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "bd44368df1111bc4"
+    },
+    "content.locations.bergen": {
+      "_id": "content-locations.bergen",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "176426c7f0d4c4cd"
+    },
+    "content.locations.oslo": {
+      "_id": "content-locations.oslo",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "4df766e1631e7d4e"
+    },
+    "content.locations.stavanger": {
+      "_id": "content-locations.stavanger",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "328f1d9221195f58"
+    },
+    "content.locations.trondheim": {
+      "_id": "content-locations.trondheim",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "9da6986d4619c6c3"
+    },
+    "content.products.blueberries.description": {
+      "_id": "content-products.blueberries.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "cda30201cdf73802"
+    },
+    "content.products.blueberries.title": {
+      "_id": "content-products.blueberries.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "b7b8f24f1902e4b9"
+    },
+    "content.products.cherryTomatoes.description": {
+      "_id": "content-products.cherryTomatoes.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "3ab07561380d7bd9"
+    },
+    "content.products.cherryTomatoes.title": {
+      "_id": "content-products.cherryTomatoes.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "fad224c55084457d"
+    },
+    "content.products.freshBasil.description": {
+      "_id": "content-products.freshBasil.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "11a9a35247903f66"
+    },
+    "content.products.freshBasil.title": {
+      "_id": "content-products.freshBasil.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "eb0267dd3acbbb91"
+    },
+    "content.products.freshLettuce.description": {
+      "_id": "content-products.freshLettuce.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "b511e2aba132a4e4"
+    },
+    "content.products.freshLettuce.title": {
+      "_id": "content-products.freshLettuce.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "729a0addb4931989"
+    },
+    "content.products.freshParsley.description": {
+      "_id": "content-products.freshParsley.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "e4c631a9bff9df23"
+    },
+    "content.products.freshParsley.title": {
+      "_id": "content-products.freshParsley.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "805cc12c6353199e"
+    },
+    "content.products.freshStrawberries.description": {
+      "_id": "content-products.freshStrawberries.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "8ffc9e987939e745"
+    },
+    "content.products.freshStrawberries.title": {
+      "_id": "content-products.freshStrawberries.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "afc29df7b7437cf5"
+    },
+    "content.products.norwegianApples.description": {
+      "_id": "content-products.norwegianApples.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "9da2c51f26ce6d1b"
+    },
+    "content.products.norwegianApples.title": {
+      "_id": "content-products.norwegianApples.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "66f616db279e6727"
+    },
+    "content.products.organicCarrots.description": {
+      "_id": "content-products.organicCarrots.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "dae2c08bb8ee9b0b"
+    },
+    "content.products.organicCarrots.title": {
+      "_id": "content-products.organicCarrots.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "28eff6d0bd246626"
+    },
+    "content.products.organicPotatoes.description": {
+      "_id": "content-products.organicPotatoes.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "3e7d24c23f5e1eb9"
+    },
+    "content.products.organicPotatoes.title": {
+      "_id": "content-products.organicPotatoes.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "c13707dea3a4a610"
+    },
+    "content.products.organicTomatoes.description": {
+      "_id": "content-products.organicTomatoes.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "79a07d4613d806df"
+    },
+    "content.products.organicTomatoes.title": {
+      "_id": "content-products.organicTomatoes.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "bd40ce96006faa5b"
+    },
+    "content.vendors.bergenGreens.description": {
+      "_id": "content-vendors.bergenGreens.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "53097849446d6173"
+    },
+    "content.vendors.bergenGreens.name": {
+      "_id": "content-vendors.bergenGreens.name",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "37c4bfa797ad4cfb"
+    },
+    "content.vendors.freshFarmOslo.description": {
+      "_id": "content-vendors.freshFarmOslo.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "d3106419025655f7"
+    },
+    "content.vendors.freshFarmOslo.name": {
+      "_id": "content-vendors.freshFarmOslo.name",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "09c9fae0bbc76b4c"
+    },
+    "content.vendors.nordicHarvest.description": {
+      "_id": "content-vendors.nordicHarvest.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "04abb96f01506310"
+    },
+    "content.vendors.nordicHarvest.name": {
+      "_id": "content-vendors.nordicHarvest.name",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "1fa5a60b8e9cc257"
+    },
+    "home.features.contact.description": {
+      "_id": "home-features.contact.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "d2404f0411aa449f"
+    },
+    "home.features.contact.title": {
+      "_id": "home-features.contact.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "d9225cd99fe56542"
+    },
+    "home.features.fresh.description": {
+      "_id": "home-features.fresh.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "71d2229da5dd8c19"
+    },
+    "home.features.fresh.title": {
+      "_id": "home-features.fresh.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "731fbcff4507c1c7"
+    },
+    "home.features.pricing.description": {
+      "_id": "home-features.pricing.description",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "a818abcd9754ab30"
+    },
+    "home.features.pricing.title": {
+      "_id": "home-features.pricing.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "328a58ead832154e"
+    },
+    "home.hero.browseButton": {
+      "_id": "home-hero.browseButton",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "278ba3490447e795"
+    },
+    "home.hero.subtitle": {
+      "_id": "home-hero.subtitle",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "439d4b750fcdbc3a"
+    },
+    "home.hero.title": {
+      "_id": "home-hero.title",
+      "_rev": "ZpoyncNt2X0ACrY7pkLgN9",
+      "hash": "456c4ce9314d203c"
+    },
+    "home.highlights.title": {
+      "_id": "home-highlights.title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "b326473ceb843277"
+    },
+    "navigation.about": {
+      "_id": "navigation-about",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "b719a215c2d9371c"
+    },
+    "navigation.browse": {
+      "_id": "navigation-browse",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "3529955213f925ba"
+    },
+    "navigation.home": {
+      "_id": "navigation-home",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "97ca6dc49fd58f7f"
+    },
+    "navigation.vendors": {
+      "_id": "navigation-vendors",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "00fb140560909176"
+    },
+    "product.contactVendor": {
+      "_id": "product-contactVendor",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "e0005bddd890074d"
+    },
+    "product.inStock": {
+      "_id": "product-inStock",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "36565951e7cfd5bf"
+    },
+    "product.location": {
+      "_id": "product-location",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "f2d809c522aa8f5b"
+    },
+    "product.outOfStock": {
+      "_id": "product-outOfStock",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "df8a902500ab80f3"
+    },
+    "product.price": {
+      "_id": "product-price",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "cb40e7814166884d"
+    },
+    "product.unit": {
+      "_id": "product-unit",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "7a1f3c7d3cd6e33e"
+    },
+    "product.updated": {
+      "_id": "product-updated",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "efe97d774be9eb01"
+    },
+    "product.vendor": {
+      "_id": "product-vendor",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "94a97b6eb4a54505"
+    },
+    "vendors.productsAvailable": {
+      "_id": "vendors-productsAvailable",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "d392f340441b9dd5"
+    },
+    "vendors.title": {
+      "_id": "vendors-title",
+      "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
+      "hash": "6d16ea917b49ac4f"
+    }
+  }
+}

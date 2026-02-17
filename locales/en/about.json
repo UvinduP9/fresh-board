@@ -1,49 +1,49 @@
 {
-  "title": "About FreshBoard",
-  "mission": {
-    "title": "Our Mission",
-    "description": "FreshBoard connects customers with local farmers and vendors across Norway, making it easy to find fresh, locally-sourced produce at fair prices. We believe in transparency, supporting local businesses, and bringing the freshest products to your table."
+  "community": {
+    "description": "Whether you're a customer looking for fresh produce or a vendor wanting to reach more customers, FreshBoard is here to help. Together, we're building a more sustainable and connected food system in Norway.",
+    "title": "Join Our Community"
   },
   "howItWorks": {
-    "title": "How It Works",
     "step1": {
-      "title": "Browse Products",
-      "description": "Explore our catalog of fresh produce from local vendors. Filter by category, location, and price to find exactly what you need."
+      "description": "Explore our catalog of fresh produce from local vendors. Filter by category, location, and price to find exactly what you need.",
+      "title": "Browse Products"
     },
     "step2": {
-      "title": "Check Prices & Availability",
-      "description": "All prices are updated daily by our vendors, ensuring you always see the most current information and availability."
+      "description": "All prices are updated daily by our vendors, ensuring you always see the most current information and availability.",
+      "title": "Check Prices & Availability"
     },
     "step3": {
-      "title": "Contact Vendors Directly",
-      "description": "Found something you like? Contact the vendor directly via WhatsApp to place your order or ask questions."
-    }
+      "description": "Found something you like? Contact the vendor directly via WhatsApp to place your order or ask questions.",
+      "title": "Contact Vendors Directly"
+    },
+    "title": "How It Works"
   },
+  "mission": {
+    "description": "FreshBoard connects customers with local farmers and vendors across Norway, making it easy to find fresh, locally-sourced produce at fair prices. We believe in transparency, supporting local businesses, and bringing the freshest products to your table.",
+    "title": "Our Mission"
+  },
+  "title": "About FreshBoard",
   "whyChoose": {
-    "title": "Why Choose FreshBoard?",
-    "freshLocal": {
-      "title": "Fresh & Local:",
-      "description": "All products come directly from Norwegian farms and local vendors"
-    },
-    "transparentPricing": {
-      "title": "Transparent Pricing:",
-      "description": "See exactly what you're paying with daily updated prices"
-    },
-    "supportLocal": {
-      "title": "Support Local:",
-      "description": "Every purchase supports local farmers and small businesses"
-    },
     "easyCommunication": {
-      "title": "Easy Communication:",
-      "description": "Direct contact with vendors for personalized service"
+      "description": "Direct contact with vendors for personalized service",
+      "title": "Easy Communication:"
+    },
+    "freshLocal": {
+      "description": "All products come directly from Norwegian farms and local vendors",
+      "title": "Fresh & Local:"
     },
     "noMiddleman": {
-      "title": "No Middleman:",
-      "description": "Connect directly with producers for the best prices"
+      "description": "Connect directly with producers for the best prices",
+      "title": "No Middleman:"
+    },
+    "supportLocal": {
+      "description": "Every purchase supports local farmers and small businesses",
+      "title": "Support Local:"
+    },
+    "title": "Why Choose FreshBoard?",
+    "transparentPricing": {
+      "description": "See exactly what you're paying with daily updated prices",
+      "title": "Transparent Pricing:"
     }
-  },
-  "community": {
-    "title": "Join Our Community",
-    "description": "Whether you're a customer looking for fresh produce or a vendor wanting to reach more customers, FreshBoard is here to help. Together, we're building a more sustainable and connected food system in Norway."
   }
 }

@@ -1,7 +1,7 @@
 {
-  "loading": "Laster...",
-  "error": "Noe gikk galt",
-  "retry": "Prøv igjen",
   "clearFilters": "Fjern filtre",
-  "lastUpdated": "Sist oppdatert"
+  "error": "Noe gikk galt",
+  "lastUpdated": "Sist oppdatert",
+  "loading": "Laster...",
+  "retry": "Prøv igjen"
 }

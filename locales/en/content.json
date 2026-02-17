@@ -1,70 +1,70 @@
 {
+  "categories": {
+    "dairy": "Dairy",
+    "fruits": "Fruits",
+    "herbs": "Herbs",
+    "vegetables": "Vegetables"
+  },
+  "locations": {
+    "bergen": "Bergen",
+    "oslo": "Oslo",
+    "stavanger": "Stavanger",
+    "trondheim": "Trondheim"
+  },
   "products": {
-    "organicTomatoes": {
-      "title": "Organic Tomatoes",
-      "description": "Fresh, locally grown organic tomatoes. Perfect for salads and cooking."
-    },
-    "freshStrawberries": {
-      "title": "Fresh Strawberries",
-      "description": "Sweet Norwegian strawberries, freshly picked this morning."
-    },
-    "organicCarrots": {
-      "title": "Organic Carrots",
-      "description": "Crunchy organic carrots, great for snacking or cooking."
-    },
-    "freshBasil": {
-      "title": "Fresh Basil",
-      "description": "Aromatic fresh basil, perfect for pasta and salads."
-    },
-    "norwegianApples": {
-      "title": "Norwegian Apples",
-      "description": "Crisp and sweet apples from local orchards."
-    },
-    "freshLettuce": {
-      "title": "Fresh Lettuce",
-      "description": "Crispy green lettuce, harvested this morning."
+    "blueberries": {
+      "description": "Fresh Norwegian blueberries, rich in antioxidants.",
+      "title": "Blueberries"
     },
     "cherryTomatoes": {
-      "title": "Cherry Tomatoes",
-      "description": "Sweet and juicy cherry tomatoes, great for snacking."
+      "description": "Sweet and juicy cherry tomatoes, great for snacking.",
+      "title": "Cherry Tomatoes"
+    },
+    "freshBasil": {
+      "description": "Aromatic fresh basil, perfect for pasta and salads.",
+      "title": "Fresh Basil"
+    },
+    "freshLettuce": {
+      "description": "Crispy green lettuce, harvested this morning.",
+      "title": "Fresh Lettuce"
     },
     "freshParsley": {
-      "title": "Fresh Parsley",
-      "description": "Fresh parsley for garnishing and cooking."
+      "description": "Fresh parsley for garnishing and cooking.",
+      "title": "Fresh Parsley"
+    },
+    "freshStrawberries": {
+      "description": "Sweet Norwegian strawberries, freshly picked this morning.",
+      "title": "Fresh Strawberries"
+    },
+    "norwegianApples": {
+      "description": "Crisp and sweet apples from local orchards.",
+      "title": "Norwegian Apples"
+    },
+    "organicCarrots": {
+      "description": "Crunchy organic carrots, great for snacking or cooking.",
+      "title": "Organic Carrots"
     },
     "organicPotatoes": {
-      "title": "Organic Potatoes",
-      "description": "Versatile organic potatoes, perfect for any meal."
+      "description": "Versatile organic potatoes, perfect for any meal.",
+      "title": "Organic Potatoes"
     },
-    "blueberries": {
-      "title": "Blueberries",
-      "description": "Fresh Norwegian blueberries, rich in antioxidants."
+    "organicTomatoes": {
+      "description": "Fresh, locally grown organic tomatoes. Perfect for salads and cooking.",
+      "title": "Organic Tomatoes"
     }
   },
   "vendors": {
-    "freshFarmOslo": {
-      "name": "Fresh Farm Oslo",
-      "description": "Organic vegetables and fruits from our family farm"
-    },
     "bergenGreens": {
-      "name": "Bergen Greens",
-      "description": "Fresh local produce delivered daily"
+      "description": "Fresh local produce delivered daily",
+      "name": "Bergen Greens"
+    },
+    "freshFarmOslo": {
+      "description": "Organic vegetables and fruits from our family farm",
+      "name": "Fresh Farm Oslo"
     },
     "nordicHarvest": {
-      "name": "Nordic Harvest",
-      "description": "Seasonal Norwegian vegetables and herbs"
+      "description": "Seasonal Norwegian vegetables and herbs",
+      "name": "Nordic Harvest"
     }
-  },
-  "categories": {
-    "vegetables": "Vegetables",
-    "fruits": "Fruits",
-    "herbs": "Herbs",
-    "dairy": "Dairy"
-  },
-  "locations": {
-    "oslo": "Oslo",
-    "bergen": "Bergen",
-    "trondheim": "Trondheim",
-    "stavanger": "Stavanger"
   }
 }
