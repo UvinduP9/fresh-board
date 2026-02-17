@@ -1,7 +1,7 @@
 {
   "version": 1,
   "dataset": "production",
-  "lastPulled": "2026-02-17T08:13:09.476Z",
+  "lastPulled": "2026-02-17T08:21:23.722Z",
   "entries": {
     "about.community.description": {
       "_id": "about-community.description",
@@ -440,8 +440,8 @@
     },
     "home.hero.title": {
       "_id": "home-hero.title",
-      "_rev": "ZpoyncNt2X0ACrY7pkLgN9",
-      "hash": "456c4ce9314d203c"
+      "_rev": "6sxUO8wEGOXoiYpipOEStT",
+      "hash": "6435d0e5cfd187c1"
     },
     "home.highlights.title": {
       "_id": "home-highlights.title",

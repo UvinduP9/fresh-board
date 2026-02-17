@@ -48,6 +48,20 @@ export default defineType({
       type: 'text',
       description: 'Context or notes about this translation',
     }),
+    defineField({
+      name: 'deprecated',
+      title: 'Deprecated',
+      type: 'boolean',
+      description: 'Mark as deprecated when removed from local files (soft delete)',
+      initialValue: false,
+    }),
+    defineField({
+      name: 'deprecatedAt',
+      title: 'Deprecated At',
+      type: 'datetime',
+      description: 'When this translation was marked as deprecated',
+      hidden: ({ document }) => !document?.deprecated,
+    }),
   ],
   preview: {
     select: {
@@ -55,11 +69,12 @@ export default defineType({
       key: 'key',
       en: 'en',
       no: 'no',
+      deprecated: 'deprecated',
     },
-    prepare({ namespace, key, en, no }) {
+    prepare({ namespace, key, en, no, deprecated }) {
       return {
-        title: `${namespace}.${key}`,
-        subtitle: `EN: ${en} | NO: ${no}`,
+        title: `${deprecated ? '⚠️ ' : ''}${namespace}.${key}`,
+        subtitle: `EN: ${en} | NO: ${no}${deprecated ? ' (DEPRECATED)' : ''}`,
       }
     },
   },
