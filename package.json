@@ -7,17 +7,27 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sync:to-sanity": "tsx scripts/sync-to-sanity.ts",
+    "sync:from-sanity": "tsx scripts/sync-from-sanity.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@sanity/client": "^7.15.0",
+    "@sanity/image-url": "^1.2.0",
+    "@sanity/vision": "^4.22.0",
     "@tailwindcss/postcss": "^4.1.18",
+    "dotenv": "^17.3.1",
     "next": "^16.1.6",
+    "next-sanity": "^11.6.12",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-dom": "^19.2.4",
+    "sanity": "^4.22.0",
+    "styled-components": "^6.3.9",
+    "tsx": "^4.21.0"
   },
   "devDependencies": {
     "@types/node": "^25.2.3",
