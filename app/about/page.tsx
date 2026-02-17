@@ -1,37 +1,35 @@
 'use client';
 
-import { I18nProvider } from '@/lib/I18nContext';
+import { I18nProvider, useI18n } from '@/lib/I18nContext';
 import Layout from '@/components/Layout';
 
 function AboutContent() {
+  const { t } = useI18n();
+
   return (
     <Layout>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8">About FreshBoard</h1>
+        <h1 className="text-4xl font-bold text-gray-900 mb-8">{t('about.title')}</h1>
 
         <div className="prose prose-lg max-w-none">
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">{t('about.mission.title')}</h2>
             <p className="text-gray-700 mb-4">
-              FreshBoard connects customers with local farmers and vendors across Norway, making 
-              it easy to find fresh, locally-sourced produce at fair prices. We believe in 
-              transparency, supporting local businesses, and bringing the freshest products to 
-              your table.
+              {t('about.mission.description')}
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">How It Works</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">{t('about.howItWorks.title')}</h2>
             <div className="space-y-4">
               <div className="flex gap-4">
                 <div className="flex-shrink-0 w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center font-bold">
                   1
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Browse Products</h3>
+                  <h3 className="font-semibold text-gray-900 mb-1">{t('about.howItWorks.step1.title')}</h3>
                   <p className="text-gray-700">
-                    Explore our catalog of fresh produce from local vendors. Filter by category, 
-                    location, and price to find exactly what you need.
+                    {t('about.howItWorks.step1.description')}
                   </p>
                 </div>
               </div>
@@ -41,10 +39,9 @@ function AboutContent() {
                   2
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Check Prices & Availability</h3>
+                  <h3 className="font-semibold text-gray-900 mb-1">{t('about.howItWorks.step2.title')}</h3>
                   <p className="text-gray-700">
-                    All prices are updated daily by our vendors, ensuring you always see the most 
-                    current information and availability.
+                    {t('about.howItWorks.step2.description')}
                   </p>
                 </div>
               </div>
@@ -54,10 +51,9 @@ function AboutContent() {
                   3
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Contact Vendors Directly</h3>
+                  <h3 className="font-semibold text-gray-900 mb-1">{t('about.howItWorks.step3.title')}</h3>
                   <p className="text-gray-700">
-                    Found something you like? Contact the vendor directly via WhatsApp to place 
-                    your order or ask questions.
+                    {t('about.howItWorks.step3.description')}
                   </p>
                 </div>
               </div>
@@ -65,37 +61,35 @@ function AboutContent() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Why Choose FreshBoard?</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">{t('about.whyChoose.title')}</h2>
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-start gap-3">
                 <span className="text-primary-600 font-bold">✓</span>
-                <span><strong>Fresh & Local:</strong> All products come directly from Norwegian farms and local vendors</span>
+                <span><strong>{t('about.whyChoose.freshLocal.title')}</strong> {t('about.whyChoose.freshLocal.description')}</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary-600 font-bold">✓</span>
-                <span><strong>Transparent Pricing:</strong> See exactly what you're paying with daily updated prices</span>
+                <span><strong>{t('about.whyChoose.transparentPricing.title')}</strong> {t('about.whyChoose.transparentPricing.description')}</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary-600 font-bold">✓</span>
-                <span><strong>Support Local:</strong> Every purchase supports local farmers and small businesses</span>
+                <span><strong>{t('about.whyChoose.supportLocal.title')}</strong> {t('about.whyChoose.supportLocal.description')}</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary-600 font-bold">✓</span>
-                <span><strong>Easy Communication:</strong> Direct contact with vendors for personalized service</span>
+                <span><strong>{t('about.whyChoose.easyCommunication.title')}</strong> {t('about.whyChoose.easyCommunication.description')}</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-primary-600 font-bold">✓</span>
-                <span><strong>No Middleman:</strong> Connect directly with producers for the best prices</span>
+                <span><strong>{t('about.whyChoose.noMiddleman.title')}</strong> {t('about.whyChoose.noMiddleman.description')}</span>
               </li>
             </ul>
           </section>
 
           <section className="bg-primary-50 rounded-lg p-6">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Join Our Community</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">{t('about.community.title')}</h2>
             <p className="text-gray-700 mb-4">
-              Whether you're a customer looking for fresh produce or a vendor wanting to reach 
-              more customers, FreshBoard is here to help. Together, we're building a more 
-              sustainable and connected food system in Norway.
+              {t('about.community.description')}
             </p>
           </section>
         </div>
