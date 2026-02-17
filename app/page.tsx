@@ -7,7 +7,7 @@ import { mockProducts } from '@/lib/mockData';
 import Link from 'next/link';
 
 function HomeContent() {
-  const { t } = useI18n();
+  const { t, translations } = useI18n();
   const featuredProducts = mockProducts.filter(p => p.featured && p.inStock).slice(0, 6);
 
   return (

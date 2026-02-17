@@ -29,7 +29,20 @@ export const I18nProvider: React.FC<{ children: React.ReactNode; initialLocale?:
   }, []);
 
   useEffect(() => {
-    loadTranslations(locale).then(setTranslations);
+    console.log('[I18nContext] Loading translations for locale:', locale);
+    loadTranslations(locale).then((loaded) => {
+      console.log('[I18nContext] Translations loaded successfully:', {
+        locale,
+        hasHome: !!loaded.home,
+        homeKeys: loaded.home ? Object.keys(loaded.home) : [],
+        homeStructure: loaded.home,
+        hasHomeHero: !!(loaded.home as any)?.hero,
+        homeHeroTitle: (loaded.home as any)?.hero?.title,
+      });
+      setTranslations(loaded);
+    }).catch((error) => {
+      console.error('[I18nContext] Failed to load translations:', error);
+    });
   }, [locale]);
 
   const setLocale = (newLocale: Locale) => {

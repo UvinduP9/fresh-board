@@ -11,7 +11,7 @@ const client = createClient({
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET!,
   useCdn: false,
   apiVersion: '2026-02-17',
-  token: process.env.SANITY_API_TOKEN, // You'll need to add this
+  token: process.env.SANITY_API_TOKEN,
 })
 
 const LOCALES = ['en', 'no']
@@ -38,10 +38,11 @@ function flattenObject(obj: any, prefix = ''): Record<string, string> {
 async function syncTranslationsToSanity() {
   console.log('🚀 Starting translation sync to Sanity...\n')
   
-  const documents = []
+  // First, load all translations for both locales
+  const translationsByKey: Record<string, { namespace: string; key: string; en: string; no: string }> = {}
   
-  for (const locale of LOCALES) {
-    for (const namespace of NAMESPACES) {
+  for (const namespace of NAMESPACES) {
+    for (const locale of LOCALES) {
       const filePath = path.join(process.cwd(), 'locales', locale, `${namespace}.json`)
       
       if (!fs.existsSync(filePath)) {
@@ -56,17 +57,31 @@ async function syncTranslationsToSanity() {
       console.log(`📝 Processing ${locale}/${namespace}.json (${Object.keys(flattenedTranslations).length} keys)`)
       
       for (const [key, value] of Object.entries(flattenedTranslations)) {
-        documents.push({
-          _type: 'translation',
-          _id: `${locale}-${namespace}-${key}`,
-          locale,
-          namespace,
-          key,
-          value,
-        })
+        const uniqueKey = `${namespace}-${key}`
+        
+        if (!translationsByKey[uniqueKey]) {
+          translationsByKey[uniqueKey] = {
+            namespace,
+            key,
+            en: '',
+            no: '',
+          }
+        }
+        
+        translationsByKey[uniqueKey][locale as 'en' | 'no'] = value
       }
     }
   }
+  
+  // Create documents
+  const documents = Object.entries(translationsByKey).map(([uniqueKey, data]) => ({
+    _type: 'translation',
+    _id: uniqueKey,
+    namespace: data.namespace,
+    key: data.key,
+    en: data.en,
+    no: data.no,
+  }))
   
   console.log(`\n📊 Total documents to sync: ${documents.length}`)
   console.log('⬆️  Uploading to Sanity...\n')

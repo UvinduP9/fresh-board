@@ -14,14 +14,14 @@ function VendorsContent() {
   };
 
   const getTranslatedVendor = (vendor: any) => {
-    if (vendor.translationKey && translations?.content.vendors[vendor.translationKey]) {
+    if (vendor.translationKey && translations?.content?.vendors?.[vendor.translationKey]) {
       return translations.content.vendors[vendor.translationKey];
     }
     return { name: vendor.name, description: vendor.description };
   };
 
   const getTranslatedLocation = (location: any) => {
-    if (location.translationKey && translations?.content.locations[location.translationKey]) {
+    if (location.translationKey && translations?.content?.locations?.[location.translationKey]) {
       return translations.content.locations[location.translationKey];
     }
     return location.name;

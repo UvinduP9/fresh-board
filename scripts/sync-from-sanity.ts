@@ -3,7 +3,6 @@ import fs from 'fs'
 import path from 'path'
 import dotenv from 'dotenv'
 
-// Load environment variables
 dotenv.config({ path: '.env.local' })
 
 const client = createClient({
@@ -13,6 +12,87 @@ const client = createClient({
   apiVersion: '2026-02-17',
   token: process.env.SANITY_API_TOKEN,
 })
+
+const LOCALES = ['en', 'no'] as const
+const NAMESPACES = ['navigation', 'browse', 'product', 'common', 'home', 'content', 'vendors', 'about']
+
+// Unflatten dot notation to nested objects
+function unflattenObject(flat: Record<string, string>): any {
+  const result: any = {}
+  
+  for (const [key, value] of Object.entries(flat)) {
+    const parts = key.split('.')
+    let current = result
+    
+    for (let i = 0; i < parts.length - 1; i++) {
+      const part = parts[i]
+      if (!(part in current)) {
+        current[part] = {}
+      }
+      current = current[part]
+    }
+    
+    current[parts[parts.length - 1]] = value
+  }
+  
+  return result
+}
+
+async function syncTranslationsFromSanity() {
+  console.log('🚀 Starting translation sync from Sanity...\n')
+  
+  // Fetch all translations
+  const query = `*[_type == "translation"]{ namespace, key, en, no }`
+  const results = await client.fetch(query)
+  
+  console.log(`📥 Fetched ${results.length} translation documents from Sanity\n`)
+  
+  // Group by locale and namespace
+  const translationsByLocaleAndNamespace: Record<string, Record<string, Record<string, string>>> = {}
+  
+  for (const locale of LOCALES) {
+    translationsByLocaleAndNamespace[locale] = {}
+    for (const namespace of NAMESPACES) {
+      translationsByLocaleAndNamespace[locale][namespace] = {}
+    }
+  }
+  
+  // Populate translations
+  for (const item of results) {
+    for (const locale of LOCALES) {
+      if (item[locale]) {
+        translationsByLocaleAndNamespace[locale][item.namespace][item.key] = item[locale]
+      }
+    }
+  }
+  
+  // Write to files
+  for (const locale of LOCALES) {
+    for (const namespace of NAMESPACES) {
+      const flatTranslations = translationsByLocaleAndNamespace[locale][namespace]
+      const translations = unflattenObject(flatTranslations)
+      
+      const filePath = path.join(process.cwd(), 'locales', locale, `${namespace}.json`)
+      const dirPath = path.dirname(filePath)
+      
+      // Ensure directory exists
+      if (!fs.existsSync(dirPath)) {
+        fs.mkdirSync(dirPath, { recursive: true })
+      }
+      
+      fs.writeFileSync(filePath, JSON.stringify(translations, null, 2) + '\n')
+      console.log(`✅ Updated ${locale}/${namespace}.json (${Object.keys(flatTranslations).length} keys)`)
+    }
+  }
+  
+  console.log('\n✨ Translation sync from Sanity completed successfully!')
+}
+
+syncTranslationsFromSanity().catch(error => {
+  console.error('❌ Error syncing translations:', error)
+  process.exit(1)
+})
+
 
 const LOCALES = ['en', 'no']
 const NAMESPACES = ['navigation', 'browse', 'product', 'common', 'home', 'content', 'vendors', 'about']

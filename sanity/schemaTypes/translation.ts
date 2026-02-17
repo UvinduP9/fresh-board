@@ -6,18 +6,6 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'locale',
-      title: 'Locale',
-      type: 'string',
-      options: {
-        list: [
-          { title: 'English', value: 'en' },
-          { title: 'Norwegian', value: 'no' },
-        ],
-      },
-      validation: (Rule) => Rule.required(),
-    }),
-    defineField({
       name: 'namespace',
       title: 'Namespace',
       type: 'string',
@@ -39,12 +27,18 @@ export default defineType({
       name: 'key',
       title: 'Translation Key',
       type: 'string',
-      description: 'Dot notation path (e.g., "home.hero.title" or "browse.filters.category")',
+      description: 'Dot notation path (e.g., "hero.title" or "filters.category")',
       validation: (Rule) => Rule.required(),
     }),
     defineField({
-      name: 'value',
-      title: 'Translation Value',
+      name: 'en',
+      title: 'English',
+      type: 'text',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'no',
+      title: 'Norwegian (Norsk)',
       type: 'text',
       validation: (Rule) => Rule.required(),
     }),
@@ -57,15 +51,15 @@ export default defineType({
   ],
   preview: {
     select: {
-      locale: 'locale',
       namespace: 'namespace',
       key: 'key',
-      value: 'value',
+      en: 'en',
+      no: 'no',
     },
-    prepare({ locale, namespace, key, value }) {
+    prepare({ namespace, key, en, no }) {
       return {
-        title: `[${locale}] ${namespace}.${key}`,
-        subtitle: value,
+        title: `${namespace}.${key}`,
+        subtitle: `EN: ${en} | NO: ${no}`,
       }
     },
   },
