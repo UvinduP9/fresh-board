@@ -1,0 +1,20 @@
+{
+  "title": "Browse Fresh Produce",
+  "searchPlaceholder": "Search for products...",
+  "filters": {
+    "title": "Filters",
+    "category": "Category",
+    "location": "Location",
+    "price": "Price Range",
+    "inStock": "In Stock Only"
+  },
+  "sort": {
+    "latest": "Latest",
+    "priceLow": "Price: Low to High",
+    "priceHigh": "Price: High to Low"
+  },
+  "empty": {
+    "title": "No products found",
+    "subtitle": "Try adjusting your filters or search terms"
+  }
+}

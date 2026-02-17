@@ -1,0 +1,20 @@
+{
+  "title": "Bla gjennom ferske produkter",
+  "searchPlaceholder": "Søk etter produkter...",
+  "filters": {
+    "title": "Filtre",
+    "category": "Kategori",
+    "location": "Plassering",
+    "price": "Prisområde",
+    "inStock": "Kun på lager"
+  },
+  "sort": {
+    "latest": "Nyeste",
+    "priceLow": "Pris: Lav til høy",
+    "priceHigh": "Pris: Høy til lav"
+  },
+  "empty": {
+    "title": "Ingen produkter funnet",
+    "subtitle": "Prøv å justere filtrene eller søkeordene dine"
+  }
+}

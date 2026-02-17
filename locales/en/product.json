@@ -1,0 +1,10 @@
+{
+  "price": "Price",
+  "unit": "Unit",
+  "updated": "Last updated",
+  "vendor": "Vendor",
+  "location": "Location",
+  "inStock": "In Stock",
+  "outOfStock": "Out of Stock",
+  "contactVendor": "Contact Vendor"
+}

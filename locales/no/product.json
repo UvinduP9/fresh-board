@@ -1,0 +1,10 @@
+{
+  "price": "Pris",
+  "unit": "Enhet",
+  "updated": "Sist oppdatert",
+  "vendor": "Selger",
+  "location": "Plassering",
+  "inStock": "På lager",
+  "outOfStock": "Utsolgt",
+  "contactVendor": "Kontakt selger"
+}
