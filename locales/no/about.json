@@ -1,0 +1,49 @@
+{
+  "title": "Om FreshBoard",
+  "mission": {
+    "title": "Vårt oppdrag",
+    "description": "FreshBoard kobler kunder med lokale bønder og leverandører over hele Norge, og gjør det enkelt å finne ferske, lokalt produserte varer til rettferdige priser. Vi tror på åpenhet, støtte til lokale bedrifter og å bringe de ferskeste produktene til ditt bord."
+  },
+  "howItWorks": {
+    "title": "Slik fungerer det",
+    "step1": {
+      "title": "Bla gjennom produkter",
+      "description": "Utforsk vårt katalog med ferske varer fra lokale leverandører. Filtrer etter kategori, sted og pris for å finne nøyaktig det du trenger."
+    },
+    "step2": {
+      "title": "Sjekk priser og tilgjengelighet",
+      "description": "Alle priser oppdateres daglig av våre leverandører, slik at du alltid ser den mest aktuelle informasjonen og tilgjengeligheten."
+    },
+    "step3": {
+      "title": "Kontakt leverandører direkte",
+      "description": "Fant noe du liker? Kontakt leverandøren direkte via WhatsApp for å bestille eller stille spørsmål."
+    }
+  },
+  "whyChoose": {
+    "title": "Hvorfor velge FreshBoard?",
+    "freshLocal": {
+      "title": "Ferskt og lokalt:",
+      "description": "Alle produkter kommer direkte fra norske gårder og lokale leverandører"
+    },
+    "transparentPricing": {
+      "title": "Gjennomsiktige priser:",
+      "description": "Se nøyaktig hva du betaler med daglig oppdaterte priser"
+    },
+    "supportLocal": {
+      "title": "Støtt lokalt:",
+      "description": "Hvert kjøp støtter lokale bønder og små bedrifter"
+    },
+    "easyCommunication": {
+      "title": "Enkel kommunikasjon:",
+      "description": "Direkte kontakt med leverandører for personlig service"
+    },
+    "noMiddleman": {
+      "title": "Ingen mellommann:",
+      "description": "Koble direkte med produsenter for de beste prisene"
+    }
+  },
+  "community": {
+    "title": "Bli med i vårt fellesskap",
+    "description": "Enten du er en kunde som leter etter ferske varer eller en leverandør som ønsker å nå flere kunder, er FreshBoard her for å hjelpe. Sammen bygger vi et mer bærekraftig og tilkoblet matsystem i Norge."
+  }
+}

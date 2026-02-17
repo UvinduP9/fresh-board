@@ -1,0 +1,70 @@
+{
+  "products": {
+    "organicTomatoes": {
+      "title": "Organic Tomatoes",
+      "description": "Fresh, locally grown organic tomatoes. Perfect for salads and cooking."
+    },
+    "freshStrawberries": {
+      "title": "Fresh Strawberries",
+      "description": "Sweet Norwegian strawberries, freshly picked this morning."
+    },
+    "organicCarrots": {
+      "title": "Organic Carrots",
+      "description": "Crunchy organic carrots, great for snacking or cooking."
+    },
+    "freshBasil": {
+      "title": "Fresh Basil",
+      "description": "Aromatic fresh basil, perfect for pasta and salads."
+    },
+    "norwegianApples": {
+      "title": "Norwegian Apples",
+      "description": "Crisp and sweet apples from local orchards."
+    },
+    "freshLettuce": {
+      "title": "Fresh Lettuce",
+      "description": "Crispy green lettuce, harvested this morning."
+    },
+    "cherryTomatoes": {
+      "title": "Cherry Tomatoes",
+      "description": "Sweet and juicy cherry tomatoes, great for snacking."
+    },
+    "freshParsley": {
+      "title": "Fresh Parsley",
+      "description": "Fresh parsley for garnishing and cooking."
+    },
+    "organicPotatoes": {
+      "title": "Organic Potatoes",
+      "description": "Versatile organic potatoes, perfect for any meal."
+    },
+    "blueberries": {
+      "title": "Blueberries",
+      "description": "Fresh Norwegian blueberries, rich in antioxidants."
+    }
+  },
+  "vendors": {
+    "freshFarmOslo": {
+      "name": "Fresh Farm Oslo",
+      "description": "Organic vegetables and fruits from our family farm"
+    },
+    "bergenGreens": {
+      "name": "Bergen Greens",
+      "description": "Fresh local produce delivered daily"
+    },
+    "nordicHarvest": {
+      "name": "Nordic Harvest",
+      "description": "Seasonal Norwegian vegetables and herbs"
+    }
+  },
+  "categories": {
+    "vegetables": "Vegetables",
+    "fruits": "Fruits",
+    "herbs": "Herbs",
+    "dairy": "Dairy"
+  },
+  "locations": {
+    "oslo": "Oslo",
+    "bergen": "Bergen",
+    "trondheim": "Trondheim",
+    "stavanger": "Stavanger"
+  }
+}

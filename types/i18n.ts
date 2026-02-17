@@ -10,6 +10,11 @@ export interface NavigationTranslations {
 export interface BrowseTranslations {
   title: string;
   searchPlaceholder: string;
+  productsFound: string;
+  clearFiltersButton: string;
+  allCategories: string;
+  allLocations: string;
+  sortBy: string;
   filters: {
     title: string;
     category: string;
@@ -72,12 +77,77 @@ export interface HomeTranslations {
   };
 }
 
+export interface ContentTranslations {
+  products: Record<string, { title: string; description: string }>;
+  vendors: Record<string, { name: string; description: string }>;
+  categories: Record<string, string>;
+  locations: Record<string, string>;
+}
+
+export interface VendorsTranslations {
+  title: string;
+  productsAvailable: string;
+}
+
+export interface AboutTranslations {
+  title: string;
+  mission: {
+    title: string;
+    description: string;
+  };
+  howItWorks: {
+    title: string;
+    step1: {
+      title: string;
+      description: string;
+    };
+    step2: {
+      title: string;
+      description: string;
+    };
+    step3: {
+      title: string;
+      description: string;
+    };
+  };
+  whyChoose: {
+    title: string;
+    freshLocal: {
+      title: string;
+      description: string;
+    };
+    transparentPricing: {
+      title: string;
+      description: string;
+    };
+    supportLocal: {
+      title: string;
+      description: string;
+    };
+    easyCommunication: {
+      title: string;
+      description: string;
+    };
+    noMiddleman: {
+      title: string;
+      description: string;
+    };
+  };
+  community: {
+    title: string;
+    description: string;
+  };
+}
+
 export interface Translations {
   navigation: NavigationTranslations;
   browse: BrowseTranslations;
   product: ProductTranslations;
   common: CommonTranslations;
   home: HomeTranslations;
+  content: ContentTranslations;
+  vendors: VendorsTranslations;
+  about: AboutTranslations;
 }
 
 export interface LocaleData {

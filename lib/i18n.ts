@@ -1,12 +1,15 @@
 import { Locale, Translations } from '@/types/i18n';
 
 const loadTranslations = async (locale: Locale): Promise<Translations> => {
-  const [navigation, browse, product, common, home] = await Promise.all([
+  const [navigation, browse, product, common, home, content, vendors, about] = await Promise.all([
     import(`@/locales/${locale}/navigation.json`),
     import(`@/locales/${locale}/browse.json`),
     import(`@/locales/${locale}/product.json`),
     import(`@/locales/${locale}/common.json`),
     import(`@/locales/${locale}/home.json`),
+    import(`@/locales/${locale}/content.json`),
+    import(`@/locales/${locale}/vendors.json`),
+    import(`@/locales/${locale}/about.json`),
   ]);
 
   return {
@@ -15,6 +18,9 @@ const loadTranslations = async (locale: Locale): Promise<Translations> => {
     product: product.default,
     common: common.default,
     home: home.default,
+    content: content.default,
+    vendors: vendors.default,
+    about: about.default,
   };
 };
 

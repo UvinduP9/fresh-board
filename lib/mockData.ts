@@ -1,17 +1,17 @@
 import { Product, Vendor, Location, Category } from '@/types/product';
 
 export const locations: Location[] = [
-  { id: '1', name: 'Oslo' },
-  { id: '2', name: 'Bergen' },
-  { id: '3', name: 'Trondheim' },
-  { id: '4', name: 'Stavanger' },
+  { id: '1', name: 'Oslo', translationKey: 'oslo' },
+  { id: '2', name: 'Bergen', translationKey: 'bergen' },
+  { id: '3', name: 'Trondheim', translationKey: 'trondheim' },
+  { id: '4', name: 'Stavanger', translationKey: 'stavanger' },
 ];
 
 export const categories: Category[] = [
-  { id: '1', name: 'Vegetables' },
-  { id: '2', name: 'Fruits' },
-  { id: '3', name: 'Herbs' },
-  { id: '4', name: 'Dairy' },
+  { id: '1', name: 'Vegetables', translationKey: 'vegetables' },
+  { id: '2', name: 'Fruits', translationKey: 'fruits' },
+  { id: '3', name: 'Herbs', translationKey: 'herbs' },
+  { id: '4', name: 'Dairy', translationKey: 'dairy' },
 ];
 
 export const vendors: Vendor[] = [
@@ -22,6 +22,7 @@ export const vendors: Vendor[] = [
     whatsapp: '+47123456789',
     location: locations[0],
     description: 'Organic vegetables and fruits from our family farm',
+    translationKey: 'freshFarmOslo',
   },
   {
     id: '2',
@@ -30,6 +31,7 @@ export const vendors: Vendor[] = [
     whatsapp: '+47234567890',
     location: locations[1],
     description: 'Fresh local produce delivered daily',
+    translationKey: 'bergenGreens',
   },
   {
     id: '3',
@@ -38,6 +40,7 @@ export const vendors: Vendor[] = [
     whatsapp: '+47345678901',
     location: locations[2],
     description: 'Seasonal Norwegian vegetables and herbs',
+    translationKey: 'nordicHarvest',
   },
 ];
 
@@ -53,8 +56,9 @@ export const mockProducts: Product[] = [
     location: locations[0],
     inStock: true,
     updatedAt: new Date('2024-02-17T08:00:00'),
-    images: ['https://images.unsplash.com/photo-1546470427-227bf6e4cf9e?w=800'],
+    images: ['https://images.unsplash.com/photo-1592841200221-a6898f307baa?w=800&q=80'],
     featured: true,
+    translationKey: 'organicTomatoes',
   },
   {
     id: '2',
@@ -67,8 +71,9 @@ export const mockProducts: Product[] = [
     location: locations[1],
     inStock: true,
     updatedAt: new Date('2024-02-17T07:30:00'),
-    images: ['https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=800'],
+    images: ['https://images.unsplash.com/photo-1543528176-61b239494933?w=800&q=80'],
     featured: true,
+    translationKey: 'freshStrawberries',
   },
   {
     id: '3',
@@ -81,8 +86,9 @@ export const mockProducts: Product[] = [
     location: locations[0],
     inStock: true,
     updatedAt: new Date('2024-02-17T06:00:00'),
-    images: ['https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=800'],
+    images: ['https://images.unsplash.com/photo-1447175008436-054170c2e979?w=800&q=80'],
     featured: false,
+    translationKey: 'organicCarrots',
   },
   {
     id: '4',
@@ -95,8 +101,9 @@ export const mockProducts: Product[] = [
     location: locations[2],
     inStock: true,
     updatedAt: new Date('2024-02-17T09:00:00'),
-    images: ['https://images.unsplash.com/photo-1618375569909-3c8616cf7733?w=800'],
+    images: ['https://images.unsplash.com/photo-1618164436241-4473940d1f5c?w=800&q=80'],
     featured: true,
+    translationKey: 'freshBasil',
   },
   {
     id: '5',
@@ -109,8 +116,9 @@ export const mockProducts: Product[] = [
     location: locations[1],
     inStock: true,
     updatedAt: new Date('2024-02-17T07:00:00'),
-    images: ['https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=800'],
+    images: ['https://images.unsplash.com/photo-1619546813926-a78fa6372cd2?w=800&q=80'],
     featured: true,
+    translationKey: 'norwegianApples',
   },
   {
     id: '6',
@@ -123,8 +131,9 @@ export const mockProducts: Product[] = [
     location: locations[0],
     inStock: true,
     updatedAt: new Date('2024-02-17T08:30:00'),
-    images: ['https://images.unsplash.com/photo-1622206151226-18ca2c9ab4a1?w=800'],
+    images: ['https://images.unsplash.com/photo-1556801712-76c8eb07bbc9?w=800&q=80'],
     featured: true,
+    translationKey: 'freshLettuce',
   },
   {
     id: '7',
@@ -137,8 +146,9 @@ export const mockProducts: Product[] = [
     location: locations[2],
     inStock: false,
     updatedAt: new Date('2024-02-16T15:00:00'),
-    images: ['https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=800'],
+    images: ['https://images.unsplash.com/photo-1601814933824-fd0b574dd592?w=800&q=80'],
     featured: false,
+    translationKey: 'cherryTomatoes',
   },
   {
     id: '8',
@@ -151,8 +161,9 @@ export const mockProducts: Product[] = [
     location: locations[2],
     inStock: true,
     updatedAt: new Date('2024-02-17T09:30:00'),
-    images: ['https://images.unsplash.com/photo-1572281299236-f156f980f217?w=800'],
+    images: ['https://images.unsplash.com/photo-1629302933863-3621e6c0de77?w=800&q=80'],
     featured: false,
+    translationKey: 'freshParsley',
   },
   {
     id: '9',
@@ -165,8 +176,9 @@ export const mockProducts: Product[] = [
     location: locations[0],
     inStock: true,
     updatedAt: new Date('2024-02-17T07:00:00'),
-    images: ['https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=800'],
+    images: ['https://images.unsplash.com/photo-1596097635195-501d84f8c2a1?w=800&q=80'],
     featured: false,
+    translationKey: 'organicPotatoes',
   },
   {
     id: '10',
@@ -181,5 +193,6 @@ export const mockProducts: Product[] = [
     updatedAt: new Date('2024-02-17T08:00:00'),
     images: ['https://images.unsplash.com/photo-1498557850523-fd3d118b962e?w=800'],
     featured: false,
+    translationKey: 'blueberries',
   },
 ];

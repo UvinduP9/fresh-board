@@ -1,6 +1,11 @@
 {
   "title": "Bla gjennom ferske produkter",
   "searchPlaceholder": "Søk etter produkter...",
+  "productsFound": "produkter funnet",
+  "clearFiltersButton": "Fjern filtre",
+  "allCategories": "Alle kategorier",
+  "allLocations": "Alle plasseringer",
+  "sortBy": "Sorter etter",
   "filters": {
     "title": "Filtre",
     "category": "Kategori",

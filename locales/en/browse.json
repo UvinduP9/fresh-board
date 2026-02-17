@@ -1,6 +1,11 @@
 {
   "title": "Browse Fresh Produce",
   "searchPlaceholder": "Search for products...",
+  "productsFound": "products found",
+  "clearFiltersButton": "Clear Filters",
+  "allCategories": "All Categories",
+  "allLocations": "All Locations",
+  "sortBy": "Sort By",
   "filters": {
     "title": "Filters",
     "category": "Category",

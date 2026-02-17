@@ -5,16 +5,19 @@ export interface Vendor {
   whatsapp?: string;
   location: Location;
   description?: string;
+  translationKey?: string;
 }
 
 export interface Location {
   id: string;
   name: string;
+  translationKey?: string;
 }
 
 export interface Category {
   id: string;
   name: string;
+  translationKey?: string;
 }
 
 export interface Product {
@@ -30,4 +33,5 @@ export interface Product {
   updatedAt: Date;
   images?: string[];
   featured?: boolean;
+  translationKey?: string;
 }
