@@ -47,11 +47,37 @@ export interface CommonTranslations {
   lastUpdated: string;
 }
 
+export interface HomeTranslations {
+  hero: {
+    title: string;
+    subtitle: string;
+    browseButton: string;
+  };
+  highlights: {
+    title: string;
+  };
+  features: {
+    fresh: {
+      title: string;
+      description: string;
+    };
+    pricing: {
+      title: string;
+      description: string;
+    };
+    contact: {
+      title: string;
+      description: string;
+    };
+  };
+}
+
 export interface Translations {
   navigation: NavigationTranslations;
   browse: BrowseTranslations;
   product: ProductTranslations;
   common: CommonTranslations;
+  home: HomeTranslations;
 }
 
 export interface LocaleData {

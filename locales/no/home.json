@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "title": "Velkommen til FreshBoard",
+    "subtitle": "Bla gjennom dagens ferske produkter og priser fra lokale leverandører over hele Norge",
+    "browseButton": "Bla gjennom alle produkter"
+  },
+  "highlights": {
+    "title": "Dagens høydepunkter"
+  },
+  "features": {
+    "fresh": {
+      "title": "Fersk & Lokal",
+      "description": "Alle produkter kommer fra lokale norske gårder"
+    },
+    "pricing": {
+      "title": "Rettferdige priser",
+      "description": "Oppdatert daglig for åpenhet og rettferdighet"
+    },
+    "contact": {
+      "title": "Enkel kontakt",
+      "description": "Direkte kontakt med leverandører via WhatsApp"
+    }
+  }
+}

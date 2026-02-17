@@ -1,0 +1,24 @@
+{
+  "hero": {
+    "title": "Welcome to FreshBoard",
+    "subtitle": "Browse today's fresh produce and prices from local vendors across Norway",
+    "browseButton": "Browse All Products"
+  },
+  "highlights": {
+    "title": "Today's Highlights"
+  },
+  "features": {
+    "fresh": {
+      "title": "Fresh & Local",
+      "description": "All products sourced from local Norwegian farms"
+    },
+    "pricing": {
+      "title": "Fair Prices",
+      "description": "Updated daily for transparency and fairness"
+    },
+    "contact": {
+      "title": "Easy Contact",
+      "description": "Direct contact with vendors via WhatsApp"
+    }
+  }
+}
