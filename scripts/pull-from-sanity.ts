@@ -67,12 +67,21 @@ function hashTranslation(item: SanityTranslation): string {
 /**
  * Unflatten a flat key-value object into nested structure
  * e.g., { "hero.title": "Hello" } → { hero: { title: "Hello" } }
+ * 
+ * Handles conflicts where a key is both a value and a parent:
+ * - "hero.title" = "Hello" AND "hero.title.new" = "World"
+ * - In this case, we store the value with a special "_value" key
  */
 function unflatten(flatData: Record<string, string>): Record<string, any> {
   const result: Record<string, any> = {};
   
-  // Sort keys to ensure consistent output
-  const sortedKeys = Object.keys(flatData).sort();
+  // Sort keys by length (shorter first) to ensure parents are created before children
+  const sortedKeys = Object.keys(flatData).sort((a, b) => {
+    const aDepth = a.split('.').length;
+    const bDepth = b.split('.').length;
+    if (aDepth !== bDepth) return aDepth - bDepth;
+    return a.localeCompare(b);
+  });
   
   for (const key of sortedKeys) {
     const value = flatData[key];
@@ -83,11 +92,24 @@ function unflatten(flatData: Record<string, string>): Record<string, any> {
       const part = parts[i];
       if (!(part in current)) {
         current[part] = {};
+      } else if (typeof current[part] === 'string') {
+        // Conflict: this path was a leaf value but now needs to be a parent
+        // Convert to object and store original value with _value key
+        const existingValue = current[part];
+        current[part] = { _value: existingValue };
+        console.warn(`⚠️  Key conflict: "${parts.slice(0, i + 1).join('.')}" is both a value and a parent. Using _value for the leaf.`);
       }
       current = current[part];
     }
     
-    current[parts[parts.length - 1]] = value;
+    const lastPart = parts[parts.length - 1];
+    if (lastPart in current && typeof current[lastPart] === 'object') {
+      // This key already exists as a parent object, store value with _value
+      current[lastPart]._value = value;
+      console.warn(`⚠️  Key conflict: "${key}" is both a value and a parent. Using _value for the leaf.`);
+    } else {
+      current[lastPart] = value;
+    }
   }
   
   return result;

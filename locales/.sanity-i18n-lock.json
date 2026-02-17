@@ -1,7 +1,7 @@
 {
   "version": 1,
   "dataset": "production",
-  "lastPulled": "2026-02-17T08:21:23.722Z",
+  "lastPulled": "2026-02-17T09:50:17.739Z",
   "entries": {
     "about.community.description": {
       "_id": "about-community.description",
@@ -432,6 +432,11 @@
       "_id": "home-hero.browseButton",
       "_rev": "ZpoyncNt2X0ACrY7pjKrqB",
       "hash": "278ba3490447e795"
+    },
+    "home.hero.new": {
+      "_id": "201d85d2-97b5-4390-b513-f7618902107b",
+      "_rev": "ZpoyncNt2X0ACrY7plGe2A",
+      "hash": "c73a6c12d95956e1"
     },
     "home.hero.subtitle": {
       "_id": "home-hero.subtitle",

@@ -15,6 +15,7 @@
   },
   "hero": {
     "browseButton": "Bla gjennom alle produkter",
+    "new": "New title in norweigian",
     "subtitle": "Bla gjennom dagens ferske produkter og priser fra lokale leverandører over hele Norge",
     "title": "Velkommen til FreshBoard"
   },
