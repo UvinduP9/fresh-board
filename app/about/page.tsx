@@ -83,6 +83,14 @@ function AboutContent() {
                 <span className="text-primary-600 font-bold">✓</span>
                 <span><strong>{t('about.whyChoose.noMiddleman.title')}</strong> {t('about.whyChoose.noMiddleman.description')}</span>
               </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary-600 font-bold">✓</span>
+                <span><strong>{t('about.whyChoose.sustainablePractices.title')}</strong> {t('about.whyChoose.sustainablePractices.description')}</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-primary-600 font-bold">✓</span>
+                <span><strong>{t('about.whyChoose.qualityGuarantee.title')}</strong> {t('about.whyChoose.qualityGuarantee.description')}</span>
+              </li>
             </ul>
           </section>
 

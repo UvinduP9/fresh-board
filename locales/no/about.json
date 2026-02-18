@@ -44,6 +44,14 @@
     "transparentPricing": {
       "description": "Se nøyaktig hva du betaler med daglig oppdaterte priser",
       "title": "Gjennomsiktige priser:"
+    },
+    "sustainablePractices": {
+      "description": "Støtt miljøvennlige jordbruksmetoder og reduser karbonavtrykket ditt",
+      "title": "Bærekraftig praksis:"
+    },
+    "qualityGuarantee": {
+      "description": "Ferske produkter høstet ved topp modenhet for maksimal smak og ernæring",
+      "title": "Kvalitetsgaranti:"
     }
   }
 }

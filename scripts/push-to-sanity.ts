@@ -13,6 +13,7 @@
  * Options:
  *   --dry-run    Preview changes without pushing
  *   --force      Skip conflict detection (use with caution)
+ *   --dataset    Target dataset (defaults to .env.local value)
  */
 
 import { createClient } from '@sanity/client';
@@ -23,9 +24,16 @@ import dotenv from 'dotenv';
 
 dotenv.config({ path: '.env.local' });
 
+// Parse CLI args
+const args = process.argv.slice(2);
+const DRY_RUN = args.includes('--dry-run');
+const FORCE = args.includes('--force');
+const datasetArg = args.find(arg => arg.startsWith('--dataset='));
+const DATASET = datasetArg ? datasetArg.split('=')[1] : process.env.NEXT_PUBLIC_SANITY_DATASET!;
+
 const client = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
-  dataset: process.env.NEXT_PUBLIC_SANITY_DATASET!,
+  dataset: DATASET,
   useCdn: false,
   apiVersion: '2024-01-01',
   token: process.env.SANITY_API_TOKEN,
@@ -35,11 +43,6 @@ const LOCALES_DIR = path.join(process.cwd(), 'locales');
 const LOCK_FILE = path.join(LOCALES_DIR, '.sanity-i18n-lock.json');
 const SUPPORTED_LOCALES = ['en', 'no'] as const;
 const NAMESPACES = ['navigation', 'browse', 'product', 'common', 'home', 'content', 'vendors', 'about'];
-
-// Parse CLI args
-const args = process.argv.slice(2);
-const DRY_RUN = args.includes('--dry-run');
-const FORCE = args.includes('--force');
 
 interface LockEntry {
   _id: string;
@@ -183,6 +186,7 @@ function generateDocId(namespace: string, key: string): string {
 
 async function push() {
   console.log(DRY_RUN ? '🔍 DRY RUN - No changes will be made\n' : '🚀 Pushing translations to Sanity...\n');
+  console.log(`📍 Target dataset: ${DATASET}\n`);
   
   // Load lock file
   const lockFile = loadLockFile();

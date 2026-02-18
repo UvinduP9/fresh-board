@@ -44,6 +44,14 @@
     "transparentPricing": {
       "description": "See exactly what you're paying with daily updated prices",
       "title": "Transparent Pricing:"
+    },
+    "sustainablePractices": {
+      "description": "Support eco-friendly farming methods and reduce your carbon footprint",
+      "title": "Sustainable Practices:"
+    },
+    "qualityGuarantee": {
+      "description": "Fresh products harvested at peak ripeness for maximum flavor and nutrition",
+      "title": "Quality Guarantee:"
     }
   }
 }

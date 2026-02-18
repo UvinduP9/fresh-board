@@ -11,6 +11,9 @@
     "i18n:pull": "tsx scripts/pull-from-sanity.ts",
     "i18n:push": "tsx scripts/push-to-sanity.ts",
     "i18n:push:dry": "tsx scripts/push-to-sanity.ts --dry-run",
+    "i18n:push:testing": "tsx scripts/push-to-sanity.ts --dataset=testing --force",
+    "i18n:sync:dry": "tsx scripts/sync-datasets.ts testing production --dry-run",
+    "i18n:sync": "tsx scripts/sync-datasets.ts testing production",
     "sync:to-sanity": "tsx scripts/sync-to-sanity.ts",
     "sync:from-sanity": "tsx scripts/sync-from-sanity.ts"
   },
