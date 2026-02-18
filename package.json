@@ -14,6 +14,9 @@
     "i18n:push:testing": "tsx scripts/push-to-sanity.ts --dataset=testing --force",
     "i18n:sync:dry": "tsx scripts/sync-datasets.ts testing production --dry-run",
     "i18n:sync": "tsx scripts/sync-datasets.ts testing production",
+    "i18n:backup": "tsx scripts/backup-translations.ts",
+    "i18n:backup:testing": "tsx scripts/backup-translations.ts --dataset=testing",
+    "i18n:backup:production": "tsx scripts/backup-translations.ts --dataset=production",
     "sync:to-sanity": "tsx scripts/sync-to-sanity.ts",
     "sync:from-sanity": "tsx scripts/sync-from-sanity.ts"
   },
