@@ -184,6 +184,17 @@ function generateDocId(namespace: string, key: string): string {
   return `${namespace}-${key}`;
 }
 
+/**
+ * Split array into chunks of given size
+ */
+function chunk<T>(arr: T[], size: number): T[][] {
+  const chunks: T[][] = [];
+  for (let i = 0; i < arr.length; i += size) {
+    chunks.push(arr.slice(i, i + size));
+  }
+  return chunks;
+}
+
 async function push() {
   console.log(DRY_RUN ? '🔍 DRY RUN - No changes will be made\n' : '🚀 Pushing translations to Sanity...\n');
   console.log(`📍 Target dataset: ${DATASET}\n`);
@@ -336,91 +347,142 @@ async function push() {
   let undeprecated = 0;
   let deprecated = 0;
   let failed = 0;
-  
-  // Create new translations
-  for (const local of toCreate) {
-    try {
-      const docId = generateDocId(local.namespace, local.key);
-      await client.createOrReplace({
-        _id: docId,
-        _type: 'translation',
-        namespace: local.namespace,
-        key: local.key,
-        en: local.en,
-        no: local.no,
-        deprecated: false,
-      });
-      created++;
-      console.log(`   ✓ Created: ${local.namespace}.${local.key}`);
-    } catch (error: any) {
-      failed++;
-      console.error(`   ✗ Failed to create ${local.namespace}.${local.key}: ${error.message}`);
-    }
-  }
-  
-  // Update existing translations (with optimistic locking)
-  for (const { local, sanity, lockEntry } of toUpdate) {
-    try {
-      // Use patch with ifRevisionId for optimistic locking
-      await client
-        .patch(sanity._id)
-        .ifRevisionId(lockEntry?._rev || sanity._rev)
-        .set({
-          en: local.en,
-          no: local.no,
-          deprecated: false,
-          deprecatedAt: undefined,
-        })
-        .commit();
-      updated++;
-      console.log(`   ✓ Updated: ${local.namespace}.${local.key}`);
-    } catch (error: any) {
-      if (error.message?.includes('revision')) {
-        conflicts.push({ 
-          lockKey: `${local.namespace}.${local.key}`, 
-          reason: 'Revision mismatch during update' 
-        });
+
+  const BATCH_SIZE = 200;
+
+  // Create new translations (batched)
+  if (toCreate.length > 0) {
+    console.log(`\n📝 Creating ${toCreate.length} translations...`);
+    const batches = chunk(toCreate, BATCH_SIZE);
+
+    for (let i = 0; i < batches.length; i++) {
+      const batch = batches[i];
+      console.log(`   Batch ${i + 1}/${batches.length}: ${batch.length} documents`);
+
+      try {
+        const transaction = client.transaction();
+
+        for (const local of batch) {
+          const docId = generateDocId(local.namespace, local.key);
+          transaction.createOrReplace({
+            _id: docId,
+            _type: 'translation',
+            namespace: local.namespace,
+            key: local.key,
+            en: local.en,
+            no: local.no,
+            deprecated: false,
+          });
+        }
+
+        await transaction.commit();
+        created += batch.length;
+        console.log(`   ✓ Created ${batch.length} translations`);
+      } catch (error: any) {
+        failed += batch.length;
+        console.error(`   ✗ Batch failed: ${error.message}`);
       }
-      failed++;
-      console.error(`   ✗ Failed to update ${local.namespace}.${local.key}: ${error.message}`);
     }
   }
-  
-  // Undeprecate translations
-  for (const { local, sanity } of toUndeprecate) {
-    try {
-      await client
-        .patch(sanity._id)
-        .set({
-          en: local.en,
-          no: local.no,
-          deprecated: false,
-          deprecatedAt: undefined,
-        })
-        .commit();
-      undeprecated++;
-      console.log(`   ✓ Undeprecated: ${local.namespace}.${local.key}`);
-    } catch (error: any) {
-      failed++;
-      console.error(`   ✗ Failed to undeprecate ${local.namespace}.${local.key}: ${error.message}`);
+
+  // Update existing translations (batched, with optimistic locking)
+  if (toUpdate.length > 0) {
+    console.log(`\n✏️  Updating ${toUpdate.length} translations...`);
+    const batches = chunk(toUpdate, BATCH_SIZE);
+
+    for (let i = 0; i < batches.length; i++) {
+      const batch = batches[i];
+      console.log(`   Batch ${i + 1}/${batches.length}: ${batch.length} documents`);
+
+      try {
+        const transaction = client.transaction();
+
+        for (const { local, sanity, lockEntry } of batch) {
+          const patch = transaction.patch(sanity._id);
+
+          if (!FORCE) {
+            patch.ifRevisionId(lockEntry?._rev || sanity._rev);
+          }
+
+          patch.set({
+            en: local.en,
+            no: local.no,
+            deprecated: false,
+            deprecatedAt: undefined,
+          });
+        }
+
+        await transaction.commit();
+        updated += batch.length;
+        console.log(`   ✓ Updated ${batch.length} translations`);
+      } catch (error: any) {
+        if (error.message?.includes('revision')) {
+          console.error(`   ✗ Batch had revision conflicts - some documents were modified externally`);
+        } else {
+          console.error(`   ✗ Batch failed: ${error.message}`);
+        }
+        failed += batch.length;
+      }
     }
   }
-  
-  // Deprecate removed translations (soft delete)
-  for (const doc of toDeprecate) {
-    try {
-      await client
-        .patch(doc._id)
-        .set({
-          deprecated: true,
-          deprecatedAt: new Date().toISOString(),
-        })
-        .commit();
-      deprecated++;
-      console.log(`   ✓ Deprecated: ${doc.namespace}.${doc.key}`);
-    } catch (error: any) {
-      failed++;
-      console.error(`   ✗ Failed to deprecate ${doc.namespace}.${doc.key}: ${error.message}`);
+
+  // Undeprecate translations (batched)
+  if (toUndeprecate.length > 0) {
+    console.log(`\n🔄 Undeprecating ${toUndeprecate.length} translations...`);
+    const batches = chunk(toUndeprecate, BATCH_SIZE);
+
+    for (let i = 0; i < batches.length; i++) {
+      const batch = batches[i];
+      console.log(`   Batch ${i + 1}/${batches.length}: ${batch.length} documents`);
+
+      try {
+        const transaction = client.transaction();
+
+        for (const { local, sanity } of batch) {
+          transaction.patch(sanity._id).set({
+            en: local.en,
+            no: local.no,
+            deprecated: false,
+            deprecatedAt: undefined,
+          });
+        }
+
+        await transaction.commit();
+        undeprecated += batch.length;
+        console.log(`   ✓ Undeprecated ${batch.length} translations`);
+      } catch (error: any) {
+        failed += batch.length;
+        console.error(`   ✗ Batch failed: ${error.message}`);
+      }
+    }
+  }
+
+  // Deprecate removed translations (batched)
+  if (toDeprecate.length > 0) {
+    console.log(`\n🗑️  Deprecating ${toDeprecate.length} translations...`);
+    const batches = chunk(toDeprecate, BATCH_SIZE);
+
+    for (let i = 0; i < batches.length; i++) {
+      const batch = batches[i];
+      console.log(`   Batch ${i + 1}/${batches.length}: ${batch.length} documents`);
+
+      try {
+        const transaction = client.transaction();
+
+        for (const doc of batch) {
+          transaction.patch(doc._id).set({
+            deprecated: true,
+            deprecatedAt: new Date().toISOString(),
+          });
+        }
+
+        await transaction.commit();
+        deprecated += batch.length;
+        console.log(`   ✓ Deprecated ${batch.length} translations`);
+      } catch (error: any) {
+        failed += batch.length;
+        console.error(`   ✗ Batch failed: ${error.message}`);
+      }
     }
   }
   
